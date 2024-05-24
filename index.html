@@ -20,30 +20,140 @@
                     Buisness <br>
                     manager <br>
                 </span>
-                <div class="categories">
+                <div class="categories" id="categories">
                     <div class="categories_list">
-                        <span class="categories__name">
-                            Фрукты
-                        </span>
-                        <div class="categories__element active">
-                            Яблоки
-                        </div>
-                        <div class="categories__element">
-                            Яблоки
-                        </div>
-                        <div class="categories__element">
-                            Яблоки
-                        </div>
-                        <div class="categories__element">
-                            Яблоки
-                        </div>
+                        <span class="categories__name">Фрукты</span>
+                        <div class="categories__element active">Яблоки</div>
                     </div>
                 </div>
             </div>
             <div class="hero">
-                <span class="hero__title">
-                    Analytics
-                </span>
+                <header>
+                    <div class="hero_header">
+                        <div class="header__info">
+                            <div class="hero__title">
+                                <img src="images/data-analytics.png" alt="">
+                                Аналитика
+                            </div>
+                            <div class="date">
+                                21.02.2024 - 22.02.2024
+                                <img src="images/calendar.png" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="button" id="addElementButton">
+                            +
+                        </div>
+                    </div>
+                    <div class="hero_categories">
+                        <span class="subtitle" id="subtitle">Фрукты/Яблоки</span>
+                    </div>
+                </header>
+                <div class="hero_main" id="heroMain">
+                    <div class="main_element">
+                        <div class="element_header">
+                            <div class="element__title">Цена</div>
+                            <div class="element__symbol">$</div>
+                        </div>
+                        <div class="element__value">
+                            200
+                        </div>
+                        <div class="element__comment">
+                            Вышло ниже чем я думал
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_panel" id="rightPanel">
+                <div class="hero_header">
+                    <div class="right__title">
+                        Создание элемента
+                        <div class="close__button" id="closeElementButton">
+                            ⤫
+                        </div>
+                    </div>
+                </div>
+                <div class="right_panel_list">
+                    <div class="right_panel_list__element drop_down">
+                        <div class="list__header">
+                            <span>Блок со значением</span>
+                            <span class="list__arrow">></span>
+                        </div>
+                        <div class="drop_down_content">
+                            <div class="input__element">
+                                <span class="input_content">Название *</span>
+                                <input type="text" class="input_text" id="dataBlockName">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Символ *</span>
+                                <input type="text" class="input_text" id="dataBlockSymbol">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Значение *</span>
+                                <input type="text" class="input_text" id="dataBlockValue">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Комментарий</span>
+                                <input type="text" class="input_text" id="dataBlockComment">
+                            </div>
+                            <div class="close__button" id="createDataBlock">Создать</div>
+                        </div>
+                    </div>
+                    <div class="right_panel_list__element drop_down">
+                        <div class="list__header">
+                            <span>Диаграмма</span>
+                            <span class="list__arrow">></span>
+                        </div>
+                        <div class="drop_down_content">
+                            <div class="input__element">
+                                <span class="input_content">Название *</span>
+                                <input type="text" class="input_text" id="diagramName">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Символ *</span>
+                                <input type="text" class="input_text" id="diagramSymbol">
+                            </div>
+                            <div class="close__button" id="createDataBlock">Создать</div>
+                        </div>
+                    </div>
+                    <div class="right_panel_list__element drop_down">
+                        <div class="list__header">
+                            <span>Группа</span>
+                            <span class="list__arrow">></span>
+                        </div>
+                        <div class="drop_down_content">
+                            <div class="input__element">
+                                <span class="input_content">Название *</span>
+                                <input type="text" class="input_text" id="groupName">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Символ *</span>
+                                <input type="text" class="input_text" id="groupSymbol">
+                            </div>
+                            <div class="close__button" id="createGroup">Создать</div>
+                        </div>
+                    </div>
+                    <div class="right_panel_list__element drop_down">
+                        <div class="list__header">
+                            <span>Элемент группы</span>
+                            <span class="list__arrow">></span>
+                        </div>
+                        <div class="drop_down_content">
+                            <div class="input__element">
+                                <span class="input_content">Название группы *</span>
+                                <input type="text" class="input_text" id="blockGroupName">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Название *</span>
+                                <input type="text" class="input_text" id="blockName">
+                            </div>
+                            <div class="input__element">
+                                <span class="input_content">Дата *</span>
+                                <input type="datetime-local" class="input_text" id="blockDate">
+                            </div>
+                            <div class="close__button" id="createGroupBlock">Создать</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
