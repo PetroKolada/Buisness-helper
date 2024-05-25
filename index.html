@@ -54,13 +54,15 @@
                             <div class="element__title">Цена</div>
                             <div class="element__symbol">$</div>
                         </div>
-                        <div class="element__value">
-                            200
-                        </div>
+                        <div class="element__value">200</div>
                         <div class="element__comment">
                             Вышло ниже чем я думал
                         </div>
+                        <div class="remove_element__button">
+                            <img src="images/trash.png" alt="">
+                        </div>
                     </div>
+
                     <div class="main_element">
                         <div class="element_header">
                             <div class="element__title">Цена</div>
@@ -68,15 +70,12 @@
                         </div>
                         <div class="diagram_holder">
                             <div class="canvas">
-                                <svg class="chart" viewBox="0 0 50 50">
-                                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
-                                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
-                                </svg>
+                                <svg class="chart" viewBox="0 0 50 50"></svg>
                             </div>
-                            <div class="circle_list">
-                                Бам<br>
-                                Бам<br>
-                            </div>
+                        </div>
+                        <div class="diagram_injector"><div>+</div></div>
+                        <div class="remove_element__button">
+                            <img src="images/trash.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -90,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="right_panel_list">
+                <div class="right_panel_list" id="dropDown">
                     <div class="right_panel_list__element drop_down">
                         <div class="list__header">
                             <span>Блок со значением</span>
@@ -175,6 +174,7 @@
             </div>
         </main>
     </div>
+    <script src="mousedrag.js"></script>
     <script src="script.js"></script>
 </body>
 
